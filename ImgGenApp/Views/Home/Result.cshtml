@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Generated Image";
+}
+
+<div class="container">
+    <h2>Generated Image</h2>
+    @if (ViewBag.OutputUrl != null)
+    {
+        <div>Image URL: @ViewBag.OutputUrl</div>
+        <img src="@ViewBag.OutputUrl" alt="Generated Image" />
+    }
+    else
+    {
+        <div>No image was generated.</div>
+    }
+</div>

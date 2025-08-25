@@ -1,0 +1,42 @@
+@model ImgGenApp.Models.GenerationRequest
+@{
+    ViewData["Title"] = "Image Generator";
+}
+<div class="container">
+  <h2 class="title">Image Generator (MVC)</h2>
+
+  @if (!ViewData.ModelState.IsValid)
+  {
+    <div class="alert">
+      @foreach (var err in ViewData.ModelState.Values.SelectMany(v => v.Errors)) {
+        <div>@err.ErrorMessage</div>
+      }
+    </div>
+  }
+
+  <form asp-action="Generate" asp-controller="Home" method="post" enctype="multipart/form-data">
+    <div class="field">
+      <label class="label">Prompt</label>
+      <textarea class="textarea" name="Prompt" rows="3" placeholder="Describe what to make...">@Model?.Prompt</textarea>
+    </div>
+    <div class="grid">
+      <div class="field">
+        <label class="label">Logo (PNG/JPG)</label>
+        <input class="input" type="file" name="LogoFile" accept=".png,.jpg,.jpeg" />
+      </div>
+      <div class="field">
+        <label class="label">Base Image (optional)</label>
+        <input class="input" type="file" name="ImageFile" accept=".png,.jpg,.jpeg" />
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Template</label>
+      <select class="select" name="Template">
+        <option>Plain</option>
+        <option>Office</option>
+        <option>Gradient</option>
+      </select>
+    </div>
+    <button class="button" type="submit">Generate</button>
+  </form>
+</div>

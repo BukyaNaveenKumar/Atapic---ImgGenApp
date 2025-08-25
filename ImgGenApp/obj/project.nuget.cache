@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "dgSpecHash": "J9426gh34Gg=",
+  "success": true,
+  "projectFilePath": "/Users/naveenkumarbukya/Desktop/ImgGenApp/ImgGenApp.csproj",
+  "expectedPackageFiles": [
+    "/Users/naveenkumarbukya/.nuget/packages/sixlabors.imagesharp/3.1.5/sixlabors.imagesharp.3.1.5.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'SixLabors.ImageSharp' 3.1.5 has a known high severity vulnerability, https://github.com/advisories/GHSA-2cmq-823j-5qj8",
+      "projectPath": "/Users/naveenkumarbukya/Desktop/ImgGenApp/ImgGenApp.csproj",
+      "warningLevel": 1,
+      "filePath": "/Users/naveenkumarbukya/Desktop/ImgGenApp/ImgGenApp.csproj",
+      "libraryId": "SixLabors.ImageSharp",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Package 'SixLabors.ImageSharp' 3.1.5 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-rxmq-m78w-7wmc",
+      "projectPath": "/Users/naveenkumarbukya/Desktop/ImgGenApp/ImgGenApp.csproj",
+      "warningLevel": 1,
+      "filePath": "/Users/naveenkumarbukya/Desktop/ImgGenApp/ImgGenApp.csproj",
+      "libraryId": "SixLabors.ImageSharp",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}
